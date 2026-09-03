@@ -126,6 +126,10 @@ https://github.com/AnjanaDampitiya/DentalClinicSystem
 
 \## Author
 
+## Development Workflow
+
+New documentation and features are developed in a separate feature branch before being merged into the main branch.
+
 
 
 Anjana Dampitiya
