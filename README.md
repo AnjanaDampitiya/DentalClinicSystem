@@ -124,11 +124,29 @@ https://github.com/AnjanaDampitiya/DentalClinicSystem
 
 
 
-\## Author
+## Author
 
 ## Development Workflow
 
 New documentation and features are developed in a separate feature branch before being merged into the main branch.
+
+## Continuous Integration and Build Delivery
+
+GitHub Actions is used to automate the build process of the Dental Clinic Management System.
+
+The CI workflow:
+1. Checks out the source code from GitHub.
+2. Sets up Java 21.
+3. Builds the NetBeans project using Apache Ant.
+4. Uploads the generated JAR file as a GitHub Actions build artifact.
+
+The workflow is triggered when changes are pushed to the `main` branch or feature branches, and when pull requests are created for the `main` branch.
+
+The generated build artifact is named `DentalClinicSystem-build`. This provides an automated method of building and delivering a deployable version of the desktop application after source-code changes.
+
+### CI/CD Workflow
+
+GitHub Push → GitHub Actions → Java 21 Setup → Ant Build → JAR Artifact
 
 
 
